@@ -1,0 +1,2 @@
+airline,version,updated_at,updated_by,pct_hard_cap,auto_approve_enabled,auto_approve_segments,auto_approve_max_abs_change,blackout_dates
+ZZ,7,2026-09-30T18:02:00Z,mark.lee,0.25,1,POA-GRU;GRU-POA,0.3,2026-12-24;2026-12-31

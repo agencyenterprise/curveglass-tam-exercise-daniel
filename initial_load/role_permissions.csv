@@ -1,0 +1,9 @@
+role,permission
+admin,runs:read
+admin,queue:read
+admin,flights:read
+admin,guardrails:read
+analyst,runs:read
+analyst,queue:read
+analyst,flights:read
+analyst,guardrails:read

@@ -1,0 +1,29 @@
+:root { --bg:#f7f8fa; --card:#fff; --ink:#1b2430; --muted:#667085; --line:#e4e7ec; --accent:#2f5bea; --up:#0a7d4f; --down:#b42318; --warn:#b54708; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); font-size:14px; }
+header { background:#101828; color:#fff; padding:12px 24px; display:flex; gap:24px; align-items:baseline; }
+header a { color:#fff; text-decoration:none; font-weight:600; }
+header span { color:#98a2b3; font-size:12px; }
+main { max-width:1100px; margin:0 auto; padding:24px; }
+h1 { font-size:20px; margin:0 0 4px; } h2 { font-size:15px; margin:24px 0 8px; }
+.sub { color:var(--muted); margin:0 0 16px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px; }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.stat .label { color:var(--muted); font-size:12px; } .stat .value { font-size:22px; font-weight:600; margin-top:4px; }
+table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+th { background:#f2f4f7; font-size:12px; color:var(--muted); font-weight:600; }
+td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+a { color:var(--accent); }
+.up { color:var(--up); font-weight:600; } .down { color:var(--down); font-weight:600; }
+.pill { display:inline-block; padding:1px 8px; border-radius:999px; font-size:12px; background:#f2f4f7; }
+.pill.published { background:#ecfdf3; color:var(--up); } .pill.pending_review { background:#fffaeb; color:var(--warn); }
+.pill.warn { background:#fef3f2; color:var(--down); }
+.filters { display:flex; gap:8px; margin-bottom:12px; }
+.filters a { padding:4px 10px; border:1px solid var(--line); border-radius:6px; text-decoration:none; background:#fff; }
+.filters a.active { border-color:var(--accent); color:var(--accent); font-weight:600; }
+@media (max-width:700px) { .stats { grid-template-columns:repeat(2,1fr); } main { padding:16px; } }
+nav { display:flex; gap:16px; flex:1; } nav a { color:#d0d5dd; font-weight:500; }
+.user { display:flex; gap:8px; align-items:center; color:#98a2b3; font-size:12px; }
+.user a { color:#d0d5dd; font-weight:400; font-size:12px; } .user b { color:#fff; }
+.denied { border-left:4px solid var(--down); }
